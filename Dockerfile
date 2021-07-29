@@ -13,4 +13,4 @@ WORKDIR /app
 
 COPY --from=builder /app/target/x86_64-unknown-linux-musl/release/hello /app/hello_world
 
-RUN ["./hello_world"]
+CMD ["./hello_world"]
